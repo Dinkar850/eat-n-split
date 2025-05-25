@@ -51,6 +51,7 @@ export default function App() {
             friend={activeFriend}
             onToggleFormSplitBill={handleToggleFormSplitBill}
             onUpdateBalance={handleUpdateBalance}
+            key={activeFriend.id}
           />
         )}
       </div>
