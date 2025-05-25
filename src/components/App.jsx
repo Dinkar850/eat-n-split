@@ -32,8 +32,8 @@ export default function App() {
   }
 
   function handleRemoveFriend(id) {
-    if (activeFriend.id === id) alert("Deselect ");
-    setFriends((friends) => friends.filter((friend) => friend.id !== id));
+    if (activeFriend && activeFriend.id === id) alert("Deselect first");
+    else setFriends((friends) => friends.filter((friend) => friend.id !== id));
   }
   return (
     <>
